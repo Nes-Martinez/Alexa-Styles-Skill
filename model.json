@@ -1,0 +1,123 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "e. s. o. style",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.PauseIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StartOverIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AnswerIntent",
+                  "slots": [
+                      {
+                          "name": "MotifName",
+                          "type": "Motif"
+                      }
+                  ],
+                  "samples": [
+                      "{MotifName}",
+                      "tell me about {MotifName}",
+                      "what do you know about {MotifName}",
+                      "{MotifName} information",
+                      "about the {MotifName} style",
+                      "about {MotifName} style",
+                      "tell me about the {MotifName} style",
+                      "what do you know about the {MotifName} style"
+                  ]
+              },
+              {
+                  "name": "StyleIntent",
+                  "slots": [
+                      {
+                          "name": "MotifName",
+                          "type": "Motif"
+                      }
+                  ],
+                  "samples": [
+                      "what is the style material for {MotifName}",
+                      "what do I need to craff {MotifName}",
+                      "about {MotifName} material"
+                  ]
+              },
+              {
+                  "name": "LocationIntent",
+                  "slots": [
+                      {
+                          "name": "MotifName",
+                          "type": "Motif"
+                      }
+                  ],
+                  "samples": [
+                      "where do I find the {MotifName} style",
+                      "where I find {MotifName}",
+                      "about {MotifName} location",
+                      "where {MotifName} drops"
+                  ]
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              }
+          ],
+          "types": [
+              {
+                  "name": "Motif",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "Sapiarch"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Breton"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Imperial"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Coldsnap Goblin"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ebonshadow"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Stahlrim Frostcaster"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ebony"
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}
